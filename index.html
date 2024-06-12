@@ -63,7 +63,7 @@
 
     <!-- Custom CSS -->
     
-<link rel="stylesheet" href="/project/css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
 
     <!-- Google Analytics -->
@@ -85,37 +85,37 @@
         <ul>
             
             <li class="menu-item">
-                <a href="/project/">
+                <a href="/">
                     Home
                 </a>
             </li>
             
             <li class="menu-item">
-                <a href="/project/archives">
+                <a href="/archives">
                     Archives
                 </a>
             </li>
             
             <li class="menu-item">
-                <a href="/project/about.html">
+                <a href="/about.html">
                     About
                 </a>
             </li>
             
             <li class="menu-item">
-                <a href="/project/tags">
+                <a href="/tags">
                     Tags
                 </a>
             </li>
             
             <li class="menu-item">
-                <a href="/project/categories">
+                <a href="/categories">
                     Categories
                 </a>
             </li>
             
             <li class="menu-item">
-                <a href="/project/contact.html">
+                <a href="/contact.html">
                     Contact
                 </a>
             </li>
@@ -200,7 +200,7 @@
 
     <div class="post-header index">
         <h1 class="title">
-            <a href="/project/2024/06/09/teachers/index/">
+            <a href="/2024/06/09/teachers/index/">
                 教师团队
             </a>
         </h1>
@@ -215,7 +215,7 @@
 
     
         <div class="content">
-            <a href="/project/2024/05/09/teacherA/" title="柏建军">柏建军</a>
+            <a href="/2024/05/09/teacherA/" title="柏建军">柏建军</a>
 
         </div>
     
@@ -227,7 +227,7 @@
 
     <div class="post-header index">
         <h1 class="title">
-            <a href="/project/2024/05/09/teacherA/">
+            <a href="/2024/05/09/teacherA/">
                 柏建军
             </a>
         </h1>
@@ -244,7 +244,7 @@
         <div class="content">
             <h1 id="教师A"><a href="#教师A" class="headerlink" title="教师A"></a>教师A</h1>
         </div>
-        <a href="/project/2024/05/09/teacherA/" class="read-more">Read More</a>
+        <a href="/2024/05/09/teacherA/" class="read-more">Read More</a>
     
 
 </div>
@@ -254,7 +254,7 @@
 
     <div class="post-header index">
         <h1 class="title">
-            <a href="/project/2024/04/10/teacherB/">
+            <a href="/2024/04/10/teacherB/">
                 B老师
             </a>
         </h1>
@@ -287,6 +287,19 @@
 
   <div class="comments" id="comments">
   <div id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script type="text/javascript">
+      const gitalk = new Gitalk({
+        clientID: '{{theme.gitalk.clientID}}',
+        clientSecret: '{{theme.gitalk.clientSecret}}',
+        repo: '{{theme.gitalk.repo}}',
+        owner: '{{theme.gitalk.githubID}}',
+        admin: ['{{theme.gitalk.adminUser}}'],	// 注意使用列表
+        id: location.pathname, // 依据官方readme,这里可能会有bug, post lable长度超过50会有报错
+      })
+      gitalk.render('gitalk-container')
+    </script>
 
 
 
@@ -315,15 +328,15 @@
         <ul>
             
             <li>
-                <a class="footer-post" href="/project/2024/06/09/teachers/index/">教师团队</a>
+                <a class="footer-post" href="/2024/06/09/teachers/index/">教师团队</a>
             </li>
             
             <li>
-                <a class="footer-post" href="/project/2024/05/09/teacherA/">柏建军</a>
+                <a class="footer-post" href="/2024/05/09/teacherA/">柏建军</a>
             </li>
             
             <li>
-                <a class="footer-post" href="/project/2024/04/10/teacherB/">B老师</a>
+                <a class="footer-post" href="/2024/04/10/teacherB/">B老师</a>
             </li>
             
         </ul>
@@ -452,7 +465,7 @@
 
 <!-- Custom JavaScript -->
 
-<script src="/project/js/main.js"></script>
+<script src="/js/main.js"></script>
 
 
 <!-- Disqus Comments -->
