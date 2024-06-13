@@ -248,7 +248,7 @@
 <li><strong>杰出青年科学基金</strong>: 2018</li>
 </ul>
 <h2 id="联系信息"><a href="#联系信息" class="headerlink" title="联系信息"></a>联系信息</h2><ul>
-<li><strong>邮箱</strong>: <a href="mailto:&#116;&#101;&#x61;&#99;&#x68;&#x65;&#x72;&#x61;&#64;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#101;&#x2e;&#99;&#111;&#x6d;">&#116;&#101;&#x61;&#99;&#x68;&#x65;&#x72;&#x61;&#64;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#101;&#x2e;&#99;&#111;&#x6d;</a></li>
+<li><strong>邮箱</strong>: <a href="mailto:&#116;&#x65;&#x61;&#x63;&#104;&#101;&#x72;&#97;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#116;&#x65;&#x61;&#x63;&#104;&#101;&#x72;&#97;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#111;&#x6d;</a></li>
 <li><strong>电话</strong>: +86 10 12345678</li>
 <li><strong>办公室</strong>: 清华大学计算机科学与技术学院 305室</li>
 </ul>
@@ -274,7 +274,35 @@
 </div>
 
 
+    
+
+
+
+
+<div class="comments" id="comments">
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="/css/gitalk.min.css">
+<script src="/js/gitalk.min.js"></script>
+<script src="https://priesttomb.github.io/js/md5.min.js"></script>
+<script type="text/javascript">
+    const gitalk = new Gitalk({
+    clientID: 'Ov23ct7f6WzMHtzQDwWD',
+    clientSecret: '73ae1458b535b8ae7f57e586a66ce7b63fe8ed50',
+    repo: 'JKevinzk.github.io',
+    owner: 'JKevinzk',
+    admin: ['JKevinzk'],	
+    id: md5(location.pathname),
+    distractionFreeMode: true,
+    createIssueManually: true,
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+
+
+
 </div>
+
 
 <!-- Footer -->
 <div class="push"></div>
